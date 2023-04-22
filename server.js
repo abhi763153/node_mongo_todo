@@ -14,7 +14,7 @@ mongoose.connect('mongodb://mongo:27017/mongoose_express_todos', {
 });
 
 const app = express();
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const mustacheExpressInstance = mustacheExpress();
 mustacheExpressInstance.cache = null;
